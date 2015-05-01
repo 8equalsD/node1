@@ -24,5 +24,11 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/8equalsD/node1/issues"
+  },
+  "homepage": "https://github.com/8equalsD/node1",
+  "devDependencies": {},
+  "author": "rrv"
 }

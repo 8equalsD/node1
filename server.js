@@ -3,13 +3,15 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var bodyParser = require('body-parser');
 var multer = require('multer'); 
+var path = require('path');
 
 app.use(bodyParser.json()); // for parsing application/json
 
 app.get('/', function(req, res){
 
   //send the index.html file for all requests
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile('index.html', { root: path.join(__dirname, '/') });
+  //res.sendFile(__dirname + '/index.html');
 
 });
 
