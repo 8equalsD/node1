@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 app.post('/', function(req, res) {
 
     //var pushMsg = req.body.pushText;
-    io.emit('message', req.body.pushText);
+    io.emit('message', req.body.text);
     console.log (req.body);
     res.send("");
 
